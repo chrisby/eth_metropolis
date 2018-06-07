@@ -31,25 +31,33 @@
 \definecolor{TolLightPink}{HTML}{AA4466}
 \definecolor{TolDarkPink}{HTML}{882255}
 \definecolor{TolLightPurple}{HTML}{AA4499}
+
+\definecolor{ETHa}{RGB}{31,64,122}      % ETH1
+\definecolor{ETHb}{RGB}{72,90,44}       % ETH2
+\definecolor{ETHc}{RGB}{18,105,176}     % ETH3
+\definecolor{ETHd}{RGB}{114,121,28}     % ETH4
+\definecolor{ETHe}{RGB}{145,5,106}      % ETH5
+\definecolor{ETHf}{RGB}{111,111,100}    % ETH6
+\definecolor{ETHg}{RGB}{168,50,45}      % ETH7
+\definecolor{ETHh}{RGB}{0,122,150}      % ETH8
+\definecolor{ETHi}{RGB}{149,96,19}      % ETH9
+
 \pgfplotscreateplotcyclelist{mbarplot cycle}{%
-  {draw=TolDarkBlue,    fill=TolDarkBlue!70},
-  {draw=TolLightBrown,  fill=TolLightBrown!70},
-  {draw=TolLightGreen,  fill=TolLightGreen!70},
-  {draw=TolDarkPink,    fill=TolDarkPink!70},
-  {draw=TolDarkPurple,  fill=TolDarkPurple!70},
-  {draw=TolDarkRed,     fill=TolDarkRed!70},
-  {draw=TolDarkBrown,   fill=TolDarkBrown!70},
-  {draw=TolLightRed,    fill=TolLightRed!70},
-  {draw=TolLightPink,   fill=TolLightPink!70},
-  {draw=TolLightPurple, fill=TolLightPurple!70},
-  {draw=TolLightBlue,   fill=TolLightBlue!70},
-  {draw=TolDarkGreen,   fill=TolDarkGreen!70},
+  {draw=ETHa,	fill=ETHa!70},
+  {draw=ETHe,	fill=ETHe!70},
+  {draw=ETHf,	fill=ETHf!70},
+  {draw=ETHc,  	fill=ETHc!70},
+  {draw=ETHh,	fill=ETHh!70},
+  {draw=ETHb,	fill=ETHb!70},
+  {draw=ETHd,	fill=ETHd!70},
+  {draw=ETHg,   fill=ETHg!70},
+  {draw=ETHi,   fill=ETHi!70}
 }
 \pgfplotscreateplotcyclelist{mlineplot cycle}{%
-  {TolDarkBlue, mark=*, mark size=1.5pt},
-  {TolLightBrown, mark=square*, mark size=1.3pt},
-  {TolLightGreen, mark=triangle*, mark size=1.5pt},
-  {TolDarkBrown, mark=diamond*, mark size=1.5pt},
+  {ETHa, mark=*, mark size=1.5pt},
+  {ETHe, mark=square*, mark size=1.3pt},
+  {ETHf, mark=triangle*, mark size=1.5pt},
+  {ETHc, mark=diamond*, mark size=1.5pt},
 }
 \pgfplotsset{
   compat=1.9,

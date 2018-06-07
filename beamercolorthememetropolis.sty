@@ -38,7 +38,6 @@
   }
 }
 
-
 % ====  new colors  ===========================================================
 \definecolor{ETHa}{RGB}{31,64,122}      % ETH1
 \definecolor{ETHb}{RGB}{72,90,44}       % ETH2
@@ -66,21 +65,21 @@
 \newcommand{\metropolis@colors@dark}{
   \setbeamercolor{normal text}{%
     fg=black!2,
-    bg=mDarkTeal
+    bg=ETHa
   }
   \usebeamercolor[fg]{normal text}
 }
 \newcommand{\metropolis@colors@light}{
   \setbeamercolor{normal text}{%
-    fg=mDarkTeal,
+    fg=ETHa,
     bg=black!2
   }
 }
 \setbeamercolor{alerted text}{%
-  fg=mLightBrown
+  fg=ETHg
 }
 \setbeamercolor{example text}{%
-  fg=mLightGreen
+  fg=ETHh
 }
 \setbeamercolor{titlelike}{use=normal text, parent=normal text}
 \setbeamercolor{author}{use=normal text, parent=normal text}
@@ -98,8 +97,9 @@
 }
 \setbeamercolor{progress bar}{%
   use=alerted text,
-  fg=ETHa,
-  bg=ETHb
+  fg=ETHg
+  ,
+  bg=ETHf
 }
 \setbeamercolor{title separator}{
   use=progress bar,

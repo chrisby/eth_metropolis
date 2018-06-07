@@ -7,6 +7,7 @@
 \usepackage[scale=2]{ccicons}
 
 \usepackage{pgfplots}
+\usepackage{tikz}
 \usepgfplotslibrary{dateplot}
 
 \usepackage{xspace}
@@ -18,11 +19,39 @@
 \date{\today}
 \author{Christian Bock}
 \institute{Machine Learning and Computation Biology}
-\titlegraphic{\hfill \includegraphics[height=1cm]{eth_logo_kurz_pos}\includegraphics[height=0.7cm]{DBSSE_logo.png}}
+\titlegraphic{
+\hfill
+%
+\includegraphics[width=1.4cm]{eth_logo_kurz_pos.pdf}
+\hspace*{0.2cm}
+\includegraphics[width=2cm]{DBSSE_logo.png}}
 
 \begin{document}
 
 \maketitle
+
+\begin{frame}{ETH Colors}
+	\begin{tikzpicture}
+        \fill[ETHa] (0,0) rectangle (0.5,0.5);
+        \node at (0,-0.2) {a};
+        \fill[ETHb] (1,0) rectangle (1.5,0.5);
+        \node at (1,-0.2) {b};
+        \fill[ETHc] (2,0) rectangle (2.5,0.5);
+        \node at (2,-0.2) {c};
+        \fill[ETHd] (3,0) rectangle (3.5,0.5);
+        \node at (3,-0.2) {d};
+        \fill[ETHe] (4,0) rectangle (4.5,0.5);
+        \node at (4,-0.2) {e};
+        \fill[ETHf] (5,0) rectangle (5.5,0.5);
+        \node at (5,-0.2) {f};
+        \fill[ETHg] (6,0) rectangle (6.5,0.5);
+        \node at (6,-0.2) {g};
+        \fill[ETHh] (7,0) rectangle (7.5,0.5);
+        \node at (7,-0.2) {h};
+        \fill[ETHi] (8,0) rectangle (8.5,0.5);
+        \node at (8,-0.2) {i};
+	\end{tikzpicture}
+\end{frame}
 
 \begin{frame}{Table of contents}
   \setbeamertemplate{section in toc}[sections numbered]
